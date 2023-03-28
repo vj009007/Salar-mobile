@@ -1,0 +1,960 @@
+/** @format */
+
+.Dasboard {
+  height: 190px;
+}
+
+.spc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.fb {
+  margin-left: 10px;
+}
+.wts {
+  margin-left: 10px;
+}
+.int {
+  margin-left: 10px;
+}
+.twt {
+  margin-left: 10px;
+}
+
+.Card1 {
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 210;
+}
+
+.Card2 {
+  margin-top: 15px;
+  margin-left: 2px;
+  height: 210;
+}
+
+.Card3 {
+  margin-top: 15px;
+  margin-left: -5px;
+  height: 210;
+}
+.Card4 {
+  margin-left: -10px;
+  margin-top: 15px;
+  height: 210;
+}
+
+.Cardin {
+  height: 255px;
+}
+
+.Details {
+  margin-top: -400px;
+  width: 490px;
+}
+
+.Chart {
+  height: 395px;
+}
+
+.cardh {
+  height: 120px;
+}
+
+.cardb {
+  height: 225px;
+}
+
+.spa {
+  margin-left: 95px;
+}
+
+.cardh {
+}
+
+.cardm {
+  margin-left: 25px;
+}
+
+.cards {
+  height: 400px;
+}
+
+.refer {
+  margin-left: 100px;
+  width: 470px;
+  height: 40px;
+}
+
+@media (max-width: 1000px) and (min-width: 700px) {
+  .card11 {
+  }
+
+  .imgs {
+    width: 70px;
+    margin-left: 4px;
+  }
+  .imgd {
+    width: 60px;
+    margin-left: 44px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 650px) {
+  .fb {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .wts {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .int {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .twt {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .nm1 {
+    width: 385px;
+    margin-top: 11px;
+    margin-left: 0px;
+  }
+
+  .nm2 {
+    margin-left: 82px;
+    width: 385px;
+    margin-top: -24px;
+  }
+  .nm3 {
+    width: 385px;
+    margin-left: 81px;
+  }
+
+  .nm4 {
+    width: 385px;
+    margin-left: 81px;
+  }
+  .nm5 {
+    width: 385px;
+    margin-left: 81px;
+  }
+  .imgs {
+    width: 70px;
+    margin-left: 4px;
+  }
+  .imgd {
+    width: 60px;
+    margin-left: 44px;
+  }
+
+  .card11 {
+    margin: -12px -15px;
+    height: 243px;
+    margin-left: -18px;
+  }
+  .input1 {
+    margin-left: -109px;
+    margin-bottom: 27px;
+    margin-top: 40px;
+    width: 20px;
+  }
+  .input2 {
+    height: 38px;
+    margin-top: 41px;
+    padding-bottom: 23px;
+    margin-right: 81px;
+  }
+  .wr {
+    font-size: 15px;
+  }
+  .card3 {
+    width: 230px;
+    margin-left: -106px;
+  }
+
+  .cardE {
+    margin-left: -23px;
+    width: 327px;
+  }
+}
+@media (max-width: 649px) and (min-width: 570px) {
+  .fb {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .wts {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .int {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .twt {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .nm1 {
+    width: 385px;
+    margin-top: 62px;
+    margin-left: -83px;
+  }
+
+  .nm2 {
+    width: 385px;
+  }
+  .nm3 {
+    width: 385px;
+  }
+
+  .nm4 {
+    width: 385px;
+  }
+  .nm5 {
+    width: 385px;
+  }
+  .imgs {
+    width: 70px;
+    margin-left: 4px;
+  }
+  .imgd {
+    width: 60px;
+    margin-left: 44px;
+  }
+
+  .card11 {
+    margin: -12px -15px;
+    height: 243px;
+    margin-left: -18px;
+  }
+  .input1 {
+    margin-left: -109px;
+    margin-bottom: 27px;
+    margin-top: 40px;
+    width: 20px;
+  }
+  .input2 {
+    height: 38px;
+    margin-top: 41px;
+    padding-bottom: 23px;
+    margin-right: 81px;
+  }
+  .wr {
+    font-size: 15px;
+  }
+  .card3 {
+    width: 230px;
+    margin-left: -106px;
+  }
+
+  .cardE {
+    margin-left: -23px;
+    width: 327px;
+  }
+}
+
+@media (max-width: 569px) and (min-width: 500px) {
+  .fb {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .wts {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .int {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .twt {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .nm1 {
+    width: 320px;
+    margin-top: 62px;
+    margin-left: -83px;
+  }
+
+  .nm2 {
+    width: 320px;
+  }
+  .nm3 {
+    width: 320px;
+  }
+
+  .nm4 {
+    width: 320px;
+  }
+  .nm5 {
+    width: 320px;
+  }
+  .imgs {
+    width: 70px;
+    margin-left: 4px;
+  }
+  .imgd {
+    width: 60px;
+    margin-left: 44px;
+  }
+
+  .card11 {
+    margin: -12px -15px;
+    height: 243px;
+    margin-left: -18px;
+  }
+  .input1 {
+    margin-left: -109px;
+    margin-bottom: 27px;
+    margin-top: 40px;
+    width: 20px;
+  }
+  .input2 {
+    height: 38px;
+    margin-top: 41px;
+    padding-bottom: 23px;
+    margin-right: 81px;
+  }
+  .wr {
+    font-size: 15px;
+  }
+  .card3 {
+    width: 230px;
+    margin-left: -106px;
+  }
+
+  .cardE {
+    margin-left: -23px;
+    width: 32px;
+  }
+  .cardI {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardJ {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardK {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardL {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardM {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardN {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardO {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardP {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardQ {
+  }
+  .cardR {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardS {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardT {
+    margin: 6px 0px 20px 2px;
+  }
+}
+@media (max-width: 499px) and (min-width: 450px) {
+  .fb {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .wts {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .int {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .twt {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .nm1 {
+    width: 285px;
+  }
+  .nm2 {
+    width: 285px;
+  }
+  .nm3 {
+    width: 285px;
+  }
+
+  .nm4 {
+    width: 285px;
+  }
+  .nm5 {
+    width: 285px;
+  }
+  .imgs {
+    width: 70px;
+    margin-left: 4px;
+  }
+  .imgd {
+    width: 60px;
+    margin-left: 44px;
+  }
+
+  .card11 {
+    margin: -12px -15px;
+    height: 243px;
+    margin-left: -18px;
+  }
+  .input1 {
+    margin-left: -109px;
+    margin-bottom: 27px;
+    margin-top: 40px;
+    width: 20px;
+  }
+  .input2 {
+    height: 38px;
+    margin-top: 41px;
+    padding-bottom: 23px;
+    margin-right: 81px;
+  }
+  .wr {
+    font-size: 15px;
+  }
+  .card3 {
+    width: 230px;
+    margin-left: -106px;
+  }
+
+  .cardE {
+    margin-left: -23px;
+    width: 32px;
+  }
+  .cardI {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardJ {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardK {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardL {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardM {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardN {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardO {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardP {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardQ {
+  }
+  .cardR {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardS {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardT {
+    margin: 6px 0px 20px 2px;
+  }
+}
+
+@media (max-width: 449px) and (min-width: 400px) {
+  .fb {
+    margin-top: 48px;
+    margin-left: 30px;
+  }
+  .wts {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .nm1 {
+    width: 236px;
+  }
+  .nm2 {
+    width: 236px;
+  }
+
+  .nm4 {
+    width: 236px;
+  }
+  .nm3 {
+    width: 236px;
+  }
+  .nm5 {
+    width: 236px;
+  }
+  .spc {
+    margin-left: -10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .int {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .twt {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .imgs {
+    width: 70px;
+    margin-left: 4px;
+  }
+  .imgd {
+    width: 60px;
+    margin-left: 44px;
+  }
+
+  .card11 {
+    margin: -12px -15px;
+    height: 243px;
+    margin-left: -18px;
+  }
+  .input1 {
+    margin-left: -109px;
+    margin-bottom: 27px;
+    margin-top: 40px;
+    width: 20px;
+  }
+  .input2 {
+    height: 38px;
+    margin-top: 41px;
+    padding-bottom: 23px;
+    margin-right: 81px;
+  }
+  .wr {
+    font-size: 15px;
+  }
+  .card3 {
+    width: 230px;
+    margin-left: -106px;
+  }
+
+  .cardE {
+    margin-left: -23px;
+    width: 32px;
+  }
+  .cardI {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardJ {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardK {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardL {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardM {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardN {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardO {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardP {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardQ {
+  }
+  .cardR {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardS {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardT {
+    margin: 6px 0px 20px 2px;
+  }
+}
+
+@media (max-width: 399px) and (min-width: 340px) {
+  .fb {
+    margin-top: 48px;
+    margin-left: 10px;
+  }
+  .wts {
+    margin-top: 48px;
+    margin-left: 20px;
+  }
+  .int {
+    margin-top: 48px;
+    margin-left: 10px;
+  }
+  .twt {
+    margin-top: 48px;
+    margin-left: 10px;
+  }
+  .spc {
+    margin-left: -8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .nm1 {
+    width: 200px;
+  }
+  .nm2 {
+    width: 200px;
+  }
+  .nm3 {
+    width: 200px;
+  }
+  .nm5 {
+    width: 200px;
+  }
+
+  .nm4 {
+    width: 200px;
+  }
+  .imgs {
+    width: 70px;
+    margin-left: 4px;
+  }
+  .imgd {
+    width: 60px;
+    margin-left: 44px;
+  }
+
+  .card11 {
+    margin: -12px -15px;
+    height: 243px;
+    margin-left: -18px;
+  }
+  .input1 {
+    margin-left: -109px;
+    margin-bottom: 27px;
+    margin-top: 40px;
+    width: 20px;
+  }
+  .input2 {
+    height: 38px;
+    margin-top: 41px;
+    padding-bottom: 23px;
+    margin-right: 81px;
+  }
+  .wr {
+    font-size: 15px;
+  }
+  .card3 {
+    width: 230px;
+    margin-left: -106px;
+  }
+
+  .cardE {
+    margin-left: -23px;
+    width: 32px;
+  }
+  .cardI {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardJ {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardK {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardL {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardM {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardN {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardO {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardP {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardQ {
+  }
+  .cardR {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardS {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardT {
+    margin: 6px 0px 20px 2px;
+  }
+}
+@media (max-width: 300px) and (min-width: 270px) {
+  .fb {
+    margin-top: 48px;
+    margin-left: 10px;
+  }
+  .wts {
+    margin-top: 48px;
+    margin-left: 10px;
+  }
+  .spc {
+    margin-left: -8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .int {
+    margin-top: 8px;
+    margin-left: 10px;
+  }
+  .twt {
+    margin-top: 8px;
+    margin-left: 10px;
+  }
+  .nm1 {
+    margin-top: 60px;
+    margin-left: -80px;
+    width: 100px;
+  }
+  .nm2 {
+    width: 100px;
+  }
+  .nm3 {
+    width: 100px;
+  }
+  .nm4 {
+    width: 100px;
+  }
+  .nm5 {
+    width: 100px;
+  }
+
+  .imgs {
+    width: 70px;
+    margin-left: 4px;
+  }
+  .imgd {
+    width: 60px;
+    margin-left: 44px;
+  }
+
+  .card11 {
+    margin: -12px -15px;
+    height: 243px;
+    margin-left: -18px;
+  }
+  .input1 {
+    margin-left: -109px;
+    margin-bottom: 27px;
+    margin-top: 40px;
+    width: 20px;
+  }
+  .input2 {
+    height: 38px;
+    margin-top: 41px;
+    padding-bottom: 23px;
+    margin-right: 81px;
+  }
+  .wr {
+    font-size: 15px;
+  }
+  .card3 {
+    width: 230px;
+    margin-left: -106px;
+  }
+
+  .cardE {
+    margin-left: -23px;
+    width: 32px;
+  }
+  .cardI {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardJ {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardK {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardL {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardM {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardN {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardO {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardP {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardQ {
+  }
+  .cardR {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardS {
+    margin: 6px 0px 20px 2px;
+  }
+  .cardT {
+    margin: 6px 0px 20px 2px;
+  }
+}
+
+@media (max-width: 39px) {
+  .fb {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .wts {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .int {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .twt {
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  .imgs {
+    width: 70px;
+    margin-left: 4px;
+  }
+  .imgd {
+    width: 60px;
+    margin-left: 44px;
+  }
+
+  .card11 {
+    margin: -12px -15px;
+    height: 243px;
+    margin-left: -18px;
+  }
+  .input1 {
+    margin-left: -109px;
+    margin-bottom: 27px;
+    margin-top: 40px;
+    width: 20px;
+  }
+  .input2 {
+    height: 38px;
+    margin-top: 41px;
+    padding-bottom: 23px;
+    margin-right: 81px;
+  }
+  .wr {
+    font-size: 15px;
+  }
+  .card3 {
+    width: 230px;
+    margin-left: -106px;
+  }
+  .cardB {
+    width: 340px;
+    margin-left: -23px;
+  }
+  .cardC {
+    width: 340px;
+    margin-left: -21px;
+  }
+  .cardD {
+    margin-left: -23px;
+    width: 340px;
+  }
+  .cardE {
+    margin-left: -23px;
+    width: 327px;
+  }
+  .cardF {
+    margin-left: -23px;
+    width: 327px;
+  }
+  .cardG {
+    margin-left: -23px;
+    width: 327px;
+  }
+  .cardH {
+    margin-left: -23px;
+    width: 327px;
+  }
+  .cardI {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+  .cardJ {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+  .cardK {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+  .cardL {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+  .cardM {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+  .cardN {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+  .cardO {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+  .cardP {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+  .cardQ {
+    width: 327px;
+    margin: 0px -13px 0px 0px;
+  }
+  .cardR {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+  .cardS {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+  .cardT {
+    width: 327px;
+    margin: 6px 35px 20px 2px;
+  }
+}

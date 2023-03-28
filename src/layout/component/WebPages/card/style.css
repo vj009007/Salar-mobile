@@ -1,0 +1,12 @@
+/** @format */
+
+:where(
+    .css-dev-only-do-not-override-diro6f
+  ).ant-ribbon.ant-ribbon-placement-end {
+  inset-inline-end: -17px !important;
+}
+
+:where(.css-dev-only-do-not-override-diro6f).ant-card .ant-card-body {
+  padding: 10px !important;
+  border-radius: 0 0 8px 8px;
+}

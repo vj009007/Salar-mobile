@@ -1,0 +1,517 @@
+/** @format */
+
+import React, { useState, useEffect, useRef } from "react";
+import Dashboardheader from "../Dashboard/dashboardheader";
+import { getTeamIncomeCommission } from "../../repo/commission";
+// import { Table, Tag, Button, Input, Space } from "antd";
+// import Highlighter from "react-highlight-words";
+// import { SearchOutlined } from "@ant-design/icons";
+import moment from "moment";
+import Paginate from "../paginate/paginate";
+function Teambonus() {
+  const [a, setA] = useState();
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsperPage, setPostsperPage] = useState(5);
+  const [searchText, setSearchText] = useState("");
+
+  const getSponserTeamByUser = async () => {
+    let userid = localStorage.getItem("user_id");
+    let data = await getTeamIncomeCommission(userid);
+    setA(data.data.payload);
+  };
+
+  useEffect(() => {
+    getSponserTeamByUser();
+  }, []);
+
+  const indexOfLastPost = currentPage * postsperPage;
+  const indexOfFirstPost = indexOfLastPost - postsperPage;
+
+  let currentPosts = [];
+  if (searchText) {
+    currentPosts =
+      a &&
+      a
+        .filter(
+          (name) => name.orderId === searchText || name.user_id === searchText
+        )
+        .slice(indexOfFirstPost, indexOfLastPost);
+  } else {
+    currentPosts = a && a.slice(indexOfFirstPost, indexOfLastPost);
+  }
+
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const previousPage = () => {
+    if (currentPage !== 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const nextPage = () => {
+    if (currentPage !== Math.ceil((a && a.length) / postsperPage)) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+  // const [a, setA] = useState();
+  // const [searchText, setSearchText] = useState("");
+  // const [searchedColumn, setSearchedColumn] = useState("");
+  // const searchInput = useRef(null);
+  // // useEffect(() => {
+  // //   (async () => {
+  // //     let userid = localStorage.getItem("user_id");
+  // //     let data = await getTeamBonus(userid);
+  // //     setA(data.data.payload);
+  // //   })();
+  // // }, []);
+  // const handleSearch = (selectedKeys, confirm, dataIndex) => {
+  //   confirm();
+  //   setSearchText(selectedKeys[0]);
+  //   setSearchedColumn(dataIndex);
+  // };
+
+  // const handleReset = clearFilters => {
+  //   clearFilters();
+  //   setSearchText("");
+  // };
+
+  // const getColumnSearchProps = dataIndex => ({
+  //   filterDropdown: ({
+  //     setSelectedKeys,
+  //     selectedKeys,
+  //     confirm,
+  //     clearFilters,
+  //     close,
+  //   }) => (
+  //     <div
+  //       style={{
+  //         padding: 8,
+  //       }}
+  //       onKeyDown={e => e.stopPropagation()}
+  //     >
+  //       <Input
+  //         ref={searchInput}
+  //         placeholder={`Search ${dataIndex}`}
+  //         value={selectedKeys[0]}
+  //         onChange={e =>
+  //           setSelectedKeys(e.target.value ? [e.target.value] : [])
+  //         }
+  //         onPressEnter={() => handleSearch(selectedKeys, confirm, dataIndex)}
+  //         style={{
+  //           marginBottom: 8,
+  //           display: "block",
+  //         }}
+  //       />
+  //       <Space>
+  //         <Button
+  //           type="primary"
+  //           onClick={() => handleSearch(selectedKeys, confirm, dataIndex)}
+  //           icon={<SearchOutlined />}
+  //           size="small"
+  //           style={{
+  //             width: 90,
+  //           }}
+  //         >
+  //           Search
+  //         </Button>
+  //         <Button
+  //           onClick={() => clearFilters && handleReset(clearFilters)}
+  //           size="small"
+  //           style={{
+  //             width: 90,
+  //           }}
+  //         >
+  //           Reset
+  //         </Button>
+  //         <Button
+  //           type="link"
+  //           size="small"
+  //           onClick={() => {
+  //             confirm({
+  //               closeDropdown: false,
+  //             });
+  //             setSearchText(selectedKeys[0]);
+  //             setSearchedColumn(dataIndex);
+  //           }}
+  //         >
+  //           Filter
+  //         </Button>
+  //         <Button
+  //           type="link"
+  //           size="small"
+  //           onClick={() => {
+  //             close();
+  //           }}
+  //         >
+  //           close
+  //         </Button>
+  //       </Space>
+  //     </div>
+  //   ),
+  //   filterIcon: filtered => (
+  //     <SearchOutlined
+  //       style={{
+  //         color: filtered ? "#1890ff" : undefined,
+  //       }}
+  //     />
+  //   ),
+  //   onFilter: (value, record) => {
+  //     let dtaa =
+  //       record[dataIndex] &&
+  //       record[dataIndex]
+  //         .toString()
+  //         .toLowerCase()
+  //         .includes(value.toLowerCase());
+  //     return dtaa;
+  //   },
+  //   onFilterDropdownOpenChange: visible => {
+  //     if (visible) {
+  //       setTimeout(() => searchInput.current.select(), 100);
+  //     }
+  //   },
+  //   render: text =>
+  //     searchedColumn === dataIndex ? (
+  //       <Highlighter
+  //         highlightStyle={{
+  //           backgroundColor: "#ffc069",
+  //           padding: 0,
+  //         }}
+  //         searchWords={[searchText]}
+  //         autoEscape
+  //         textToHighlight={text ? text.toString() : ""}
+  //       />
+  //     ) : (
+  //       text
+  //     ),
+  // });
+
+  // const dataSource =
+  //   a &&
+  //   a.map((item, i) => {
+  //     return {
+  //       sno: i + 1,
+  //       dop: moment(item.createdAt).format("DD/MM/YYYY"),
+  //       product_type: item.productType,
+  //       order_id: item.orderId,
+  //       product_name: item.productName,
+  //       user_id: item.userId,
+  //       user_name: item.userName,
+  //       upliner_id: item.uplinerId,
+  //       team_income: item.teamIncome,
+  //       teamincome_status: item.teamincomeStatus
+  //     };
+  //   });
+
+  // const columns = [
+  //   {
+  //     title: "S No",
+  //     dataIndex: "sno",
+  //     key: "sno",
+  //     filterSearch: true,
+  //     filterMode: "tree",
+  //     filters: [],
+  //     ...getColumnSearchProps("sno"),
+  //   },
+  //   {
+  //     title: "Date Of Purchase",
+  //     dataIndex: "dop",
+  //     key: "dop",
+  //     filterSearch: true,
+  //     filterMode: "tree",
+  //     filters: [],
+  //     ...getColumnSearchProps("dop"),
+  //   },
+  //   {
+  //     title: "Product Type", width: "250px",
+  //     dataIndex: "product_type",
+  //     key: "product_type",
+  //     filterSearch: true,
+  //     filterMode: "tree",
+  //     filters: [],
+  //     ...getColumnSearchProps("product_type"),
+  //   },
+  //   {
+  //     title: "Order Id", width: "250px",
+  //     dataIndex: "order_id",
+  //     key: "order_id",
+  //     filterSearch: true,
+  //     filterMode: "tree",
+  //     filters: [],
+  //     ...getColumnSearchProps("order_id"),
+  //   },
+
+  //   {
+  //     title: "Product Name", width: "250px",
+  //     dataIndex: "product_name",
+  //     key: "product_name",
+  //     filterSearch: true,
+  //     filterMode: "tree",
+  //     filters: [],
+  //     ...getColumnSearchProps("product_name"),
+  //   },
+  //   {
+  //     title: "User Id", width: "250px",
+  //     dataIndex: "user_id",
+  //     key: "user_id",
+  //     filterSearch: true,
+  //     filterMode: "tree",
+  //     filters: [],
+  //     ...getColumnSearchProps("user_id"),
+  //   },
+  //   {
+  //     title: "User Name", width: "250px",
+  //     dataIndex: "user_name",
+  //     key: "user_name",
+  //     filterSearch: true,
+  //     filterMode: "tree",
+  //     filters: [],
+  //     ...getColumnSearchProps("user_name"),
+  //   },
+  //   {
+  //     title: "Uplinr Id", width: "250px",
+  //     dataIndex: "upliner_id",
+  //     key: "upliner_id",
+  //     filterSearch: true,
+  //     filterMode: "tree",
+  //     filters: [],
+  //     ...getColumnSearchProps("upliner_id"),
+  //   },
+  //   {
+  //     title: "Team Income(₹)", width: "250px",
+  //     dataIndex: "team_income",
+  //     key: "team_income",
+  //     filterSearch: true,
+  //     filterMode: "tree",
+  //     filters: [],
+  //     ...getColumnSearchProps("team_income"),
+  //   },
+  //   {
+  //     title: "Team Income Status", width: "250px",
+  //     dataIndex: "teamincome_status",
+  //     key: "teamincome_status",
+  //     filterSearch: true,
+  //     filterMode: "tree",
+  //     filters: [],
+  //     ...getColumnSearchProps("teamincome_status"),
+  //   },
+  // ];
+  return (
+    <div className="myAccounts">
+      <Dashboardheader />
+      <div class="container-fluid py-4">
+        <br></br>
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header pb-0">
+                <div className="row mt-4">
+                  <div className="col-md-6">
+                    <h3>Team Income - ₹.1000000</h3>
+                  </div>
+                  <div className="col-md-6">
+                    <h5>
+                      Team Income Subscription :
+                      <span
+                        class="badge badge-success badge-sm"
+                        style={{ marginLeft: "10px" }}
+                      >
+                        Active
+                      </span>
+                      <span
+                        class="badge badge-danger badge-sm"
+                        style={{ marginLeft: "10px" }}
+                      >
+                        In-Active
+                      </span>
+                    </h5>
+                  </div>
+                </div>
+                <div class="d-lg-flex">
+                  <div class="ms-auto my-auto mt-lg-0 mt-4">
+                    {/* <div class="ms-auto my-auto">
+                      <button
+                        class="btn btn bg-gradient-info  btn-sm export mb-0 mt-sm-0 mt-1"
+                        data-type="csv"
+                        type="button"
+                        name="button"
+                      >
+                        Export
+                      </button>
+                    </div> */}
+                  </div>
+                </div>
+              </div>
+              <br></br>
+              <div className="row" style={{ justifyContent: "center" }}>
+                <div className="col-md-1">
+                  <select
+                    class="input form-select"
+                    aria-label="Default select example"
+                    onChange={(e) => setPostsperPage(e.target.value)}
+                  >
+                    <option selected>0</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                  </select>
+                </div>
+                <div className="col-md-3">
+                  <input
+                    class="date form-control"
+                    type="date"
+                    value="2018-11-23"
+                    id="example-date-input"
+                  ></input>
+                </div>
+                <div className="col-md-3">
+                  <input
+                    class="date form-control"
+                    type="date"
+                    value="2018-11-23"
+                    id="example-date-input"
+                  ></input>
+                </div>
+                <div className="col-md-2">
+                  <button
+                    class="btn color  btn-sm export mb-0 mt-sm-0 mt-1"
+                    data-type="csv"
+                    type="button"
+                    name="button"
+                  >
+                    Submit
+                  </button>
+                </div>
+                <div className="col-md-2">
+                  <input
+                    class="for form-control"
+                    type="search"
+                    placeholder="Search....."
+                    onChange={(e) => setSearchText(e.target.value)}
+                  />
+                </div>
+              </div>
+
+              <div class="card-body px-0 pb-0">
+                <div class=" container table-responsive">
+                  <table
+                    class=" table table-bordered table table-flush"
+                    id="products-list"
+                  >
+                    <thead
+                      class="thead-light"
+                      style={{ textAlign: "center", color: "black" }}
+                    >
+                      <tr>
+                        <th>S No</th>
+                        <th>Date of Purchase</th>
+                        <th>Product Type</th>
+                        <th>Order Id</th>
+                        <th>Product Name</th>
+                        <th>User Id</th>
+                        <th>User Name</th>
+                        <th>Upliner Id</th>
+                        <th>Team Income(₹) </th>
+                        <th>Team Income Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {currentPosts &&
+                        currentPosts.map((item, i) => {
+                          return (
+                            <tr>
+                              <td>{i + 1}</td>
+                              <td className="text-sm">
+                                {" "}
+                                {item.dataOfPurchase}
+                              </td>
+                              <td className="text-sm">
+                                {item.productType === "physical" ? (
+                                  <span class="badge badge-success badge-sm">
+                                    {item.productType}
+                                  </span>
+                                ) : (
+                                  <span class="badge badge-info badge-sm">
+                                    {item.productType}
+                                  </span>
+                                )}
+                              </td>
+                              <td className="text-sm">{item.orderId}</td>
+                              <td className="text-sm">{item.productName}</td>
+                              <td className="text-sm">{item.user_id}</td>
+                              <td className="text-sm">{item.userName}</td>
+                              <td className="text-sm">{item.uplinkerId}</td>
+                              <td className="text-sm">{item.teamIncome}</td>
+                              <td className="text-sm">
+                                {(() => {
+                                  switch (item.status) {
+                                    case "pending":
+                                      return (
+                                        <span class="badge badge-danger badge-sm">
+                                          Pending
+                                        </span>
+                                      );
+                                    case "available":
+                                      return (
+                                        <span class="badge badge-info badge-sm">
+                                          Available
+                                        </span>
+                                      );
+                                  }
+                                })()}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      {/* <tr>
+                        <td class="text-sm">1</td>
+                        <td class="text-sm">Date Of Purchase</td>
+                        <td class="text-sm">
+                          <span class="badge badge-info badge-sm">Digital</span>
+                          <br></br>
+                          <span class="badge badge-success badge-sm">
+                            Physical
+                          </span>
+                        </td>
+                        <td class="text-sm">Order Id</td>
+                        <td class="text-sm">Mobile</td>
+                        <td class="text-sm">Product Name</td>
+                        <td class="text-sm">User ID</td>
+                        <td class="text-sm">User Name</td>
+                        <td class="text-sm">1000</td>
+                        <td class="text-sm">
+                          <span class="badge badge-info badge-sm">Pending</span>
+                          <br></br>
+                          <span class="badge badge-success badge-sm">
+                            Available
+                          </span>
+                          <br />
+                          <span class="badge badge-danger badge-sm">
+                            Not-Available
+                          </span>
+                        </td>
+                      </tr>
+                      <tr></tr> */}
+                    </tbody>
+                  </table>
+                </div>
+                <Paginate
+                  postsPerPage={postsperPage}
+                  totalPosts={a && a.length}
+                  paginate={paginate}
+                  previousPage={previousPage}
+                  nextPage={nextPage}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <Table dataSource={dataSource} columns={columns} /> */}
+      </div>
+    </div>
+  );
+}
+
+export default Teambonus;

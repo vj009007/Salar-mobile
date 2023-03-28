@@ -1,0 +1,535 @@
+.async-hide {
+  opacity: 0 !important;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0s;
+}
+
+.w-99 {
+  width: 99% !important;
+}
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #d2d6da;
+  border-radius: 0.5rem;
+  appearance: none;
+}
+
+.Iagree {
+  padding-left: 0px;
+  padding-top: 15px;
+}
+
+.sideBarNavRight {
+  position: fixed;
+  right: 0;
+  top: 0;
+  box-shadow: -4px 0 5px rgb(0 0 0 / 25%);
+  background-color: #ffffff;
+  z-index: 222;
+  transform: translateX(100%);
+  transition: 0;
+  transition-delay: 2px;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+  width: 40%;
+  height: 100%;
+  overflow: auto;
+}
+.leftcarts h1 {
+  padding-left: 10px;
+  font-size: 13px;
+  line-height: 5px;
+}
+.leftcarts {
+  text-align: center;
+  padding-top: 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  box-shadow: -4px 0 5px rgb(0 0 0 / 25%);
+  background-color: #ffffff;
+  z-index: 222;
+  transform: translateX(100%);
+  transition: 0;
+  transition-delay: 2px;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+  width: 15%;
+  height: 100%;
+  overflow: auto;
+}
+.leftcarts img {
+  width: 100%;
+  max-width: 50%;
+}
+.leftcarts h2 {
+  font-weight: bold;
+  font-size: 13px;
+  /* padding-top: 15px; */
+  padding-bottom: 15px;
+  color: #de2668;
+  letter-spacing: -0rem;
+}
+
+.leftcarts h2 span {
+  font-size: 30px;
+}
+
+.leftcarts .form-check-label {
+  font-size: 25px;
+}
+
+.leftcarts .removeIcons {
+  position: absolute;
+  right: 3px;
+  font-size: 25px;
+  cursor: pointer;
+  top: 3px;
+  background: #00000026;
+  font-weight: bold;
+}
+.sideBarNavRight {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #ffffff57;
+  z-index: 222;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.navbar-nav li.nav-item.mx-2 {
+  clear: both;
+  display: inline-block;
+  /* overflow: hidden; */
+  white-space: nowrap;
+  /* padding-right: 0px !important; */
+  margin-right: 4px !important;
+}
+
+.navbar-dark.newAddBg {
+  background-color: #ffffff;
+}
+
+.navbar-dark.newAddBg .addNewBoder {
+  border: 1px solid #8f8f8f;
+  background-color: #f0f0f0 !important;
+}
+
+.navbar-dark.newAddBg .navbar-nav li.nav-item.mx-2 a {
+  color: #000000 !important;
+}
+
+div#collapseOne .accordion-body.text-sm.opacity-8 {
+  padding: 10px;
+}
+
+.accordion-header .accordion-button {
+  color: #ffffff;
+  background-color: burlywood;
+}
+.oblique-image {
+  background-image: url("https://demos.creative-tim.com/soft-ui-dashboard-pro/assets/img/curved-images/curved9.jpg");
+  position: absolute !important;
+  height: 100% !important;
+  transform: skewX(10deg);
+  background-size: cover;
+}
+.star {
+  color: #ffa41c;
+}
+.oblique {
+  transform: skewX(-10deg);
+  overflow: hidden;
+  width: 60%;
+  right: -10rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.myAccounts,
+.navbar.navbar-main {
+  margin-left: 17.125rem !important;
+}
+
+.mainRightNow .card.shadow-lg.blur {
+  position: fixed !important;
+  right: -360px;
+  top: 0;
+  height: 100%;
+  left: auto !important;
+  transform: unset !important;
+  width: 360px;
+  border-radius: 0;
+  padding: 0 10px;
+  transition: 0.2s ease;
+  z-index: 1022;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* .card.shadow-lg.blur{
+  right: -360px;
+} */
+
+.bg-salmon .card.shadow-lg.blur {
+  right: 0px;
+}
+
+.sideBarNavRight button {
+  width: 165px !important;
+}
+.sideBarNavRight hr {
+  margin: 1rem 0;
+  color: red;
+  border: 0;
+  border-top: 1px solid !important;
+  opacity: 0.25;
+}
+.my-gallery span {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 10px;
+}
+sup.bags {
+  font-size: 11px;
+  color: #151269;
+  font-weight: bold;
+}
+
+.titleSpan span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.titleSpan input {
+  /* padding-right: 11px !important; */
+  margin-right: 6px;
+  margin-bottom: 15px;
+}
+
+.bi-cart-check-fill {
+  color: #e68351;
+}
+li.page-item.active a {
+  color: #ffffff;
+}
+.accordion.addAcr .accordion-button::after {
+  content: none;
+}
+.accordion.addAcr .text-xs {
+  font-size: 1.25rem !important;
+  /* padding-left: 0px; */
+  padding-right: 10px;
+}
+.accordion.addAcr .accordion-header .accordion-button {
+  color: #ffffff;
+  background-color: #000000;
+}
+.row.newAddSome h1 {
+  font-size: 20px;
+  padding-left: 12px;
+}
+
+.row.newAddSome p {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 400;
+  padding-left: 12px;
+  /* border-right: 1px solid; */
+}
+.border-color {
+  color: #17c1e8;
+}
+
+.color {
+  background-color: #17c1e8;
+  color: white;
+}
+.label,
+.form-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: black;
+  margin-left: 0.25rem;
+}
+.NormalUser .form-label {
+  margin-top: 12px;
+  font-weight: 600;
+  color: black;
+}
+table.table.table-success th {
+  border: 0px !important;
+  padding-bottom: 8px;
+}
+
+.accountData h2 {
+  font-size: 20px;
+}
+
+.accountData p {
+  font-size: 16px;
+  color: #000000;
+  line-height: 30px;
+}
+.sidenav.newAddSidenav .icon {
+  padding: 10px;
+  background-image: none;
+}
+.myAccounts .form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d2d6da;
+  appearance: none;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+input.form-control.input1 {
+  width: 1%;
+}
+
+.container-fluid.silkSlidesMain .slick-slide img {
+  width: 100%;
+}
+
+.input-group.samplePrd .form-control {
+  width: 1%;
+}
+
+.myAccounts.smapleEcom .form-control {
+  margin-bottom: 20px;
+}
+
+.cartBtn {
+  border: 2px solid #dddddd !important;
+}
+
+.sidebarCartsP .card.card-pricing .card-body {
+  padding: 15px !important;
+}
+
+.bannerSectionHere img {
+  height: auto !important;
+}
+
+button.cartBtns {
+  position: relative;
+  top: 10px;
+}
+
+.paymentTypes .form-check-label {
+  padding-left: 6px;
+}
+.paymentTypes li i {
+  padding-right: 6px;
+}
+.orderCheckout .card.card-pricing .card-body {
+  padding: 20px;
+}
+
+.cardDynamictrue {
+  border: 1px solid #cfc0c0;
+  cursor: pointer;
+}
+
+.menuSidebar {
+  position: fixed !important;
+  left: -360px;
+  top: 0;
+  height: 100% !important;
+  right: auto !important;
+  transform: unset !important;
+  width: 360px;
+  border-radius: 0;
+  padding: 0 10px;
+  transition: 0.2s ease;
+  z-index: 1020;
+  bottom: 0;
+  background: #ffffff;
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
+}
+
+.menuSidebar nav.newBalckBg {
+  box-shadow: none;
+}
+
+.menuSidebarRight {
+  position: fixed !important;
+  left: auto;
+  top: 0;
+  height: 100%;
+  right: -360px;
+  transform: unset !important;
+  width: 360px;
+  border-radius: 0;
+  padding: 0 10px;
+  transition: 0.2s ease;
+  z-index: 1020;
+  background: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+}
+
+.menuSidebar nav.newBalckBg {
+  background: #ffffff !important;
+  /* color: #000000 !important; */
+  /* border-top: 20px solid #000000; */
+}
+.menuSidebar .navbar-nav li.nav-item.mx-2 {
+  clear: both;
+  display: inline-block;
+  overflow: scroll;
+  white-space: nowrap;
+  margin-right: -10px !important;
+  width: 100% !important;
+  height: 1000px;
+}
+
+.menuSidebar .nav-item.mx-2 a {
+  padding: 0.5rem 1rem;
+  padding: 0.5rem;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.menuSidebar ul {
+  width: 100%;
+}
+
+.menuSidebar nav.newBalckBg .sec-nav .nav-link:hover {
+  background-color: #eaeded;
+  color: #111 !important;
+}
+.welcomePara {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  left: 0;
+  height: 29px;
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 5px;
+  padding-left: 40px;
+  padding-right: 22px;
+  height: 45px;
+  width: 350px;
+}
+
+.menuSidebar .fa-close {
+  position: absolute;
+  right: -30px;
+  color: #000000;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menuSidebarRight .fa-close {
+  position: absolute;
+  right: 10px;
+  color: #000000;
+  top: 10px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+#arrows .iaccess {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+#arrows:hover .iaccess {
+  top: -20px;
+}
+#arrows .iaccess:hover {
+  top: 0;
+}
+.form-select:focus {
+  border-color: #dddddd;
+}
+
+#message,
+#messageTwo,
+.messageSign {
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 12px;
+  margin-top: 10px;
+}
+#lblError {
+  color: red;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-top: 0px;
+  font-family: "Font Awesome 5 Brands";
+}
+#lblErrorS {
+  color: red;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-top: 0px;
+  font-family: "Font Awesome 5 Brands";
+}
+
+#message p,
+#messageTwo p,
+.messageSign p {
+  padding: 0px 34px;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.messageSign {
+  width: 100%;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+#fullNames,
+#mobilesNumber {
+  display: none;
+  color: red;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-top: 0px;
+  font-family: "Font Awesome 5 Brands";
+  margin-left: 5px;
+}
